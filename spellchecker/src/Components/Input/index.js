@@ -11,7 +11,7 @@ import React from 'react'
 import { useState } from 'react'
 import './input.css'
 
-function Input({onSubmit}) {
+function Input({onSubmit, handleUndo}) {
 
     const [text, setText] = useState("")
 
@@ -33,6 +33,7 @@ function Input({onSubmit}) {
             <input type="text" value={text} onChange={function(e) {setText(e.target.value)}}></input>
             {/* Add function here */}
             <button type="submit">Submit</button> 
+            <button onClick={() => handleUndo()} className="undo" >Undo</button>
         </form>
     )
 }

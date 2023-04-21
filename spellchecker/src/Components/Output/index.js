@@ -10,7 +10,6 @@ function Output({correctedText, handleUndo}) {
           <li key={index}>{word}</li>
         ))}
       </ul>
-      <button onClick={() => handleUndo()} className="undo-button">Undo</button>
     </div>
   );
 }

@@ -39,8 +39,8 @@ function App() {
     <div className="App">
       <header className="App-header">
       <h1>Spell Checker</h1>
-      <Input onSubmit={handleSubmit}/>
-      <Output correctedText = {correctedText} handleUndo={handleUndo}/>
+      <Input onSubmit={handleSubmit} handleUndo={handleUndo}/>
+      <Output correctedText = {correctedText} />
       </header>
     </div>
   );
