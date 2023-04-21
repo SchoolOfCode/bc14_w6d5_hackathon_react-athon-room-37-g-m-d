@@ -2,6 +2,7 @@
 import './App.css';
 import Input from '../Input/index.js'
 import Output from '../Output/index.js'
+import { useState } from 'react'
 
 function App() {
 
@@ -20,7 +21,8 @@ function App() {
   const data = await response.json();
   // log the data to prove we have received it from the API
   console.log(data);
-  setCorrectedText(data)
+  // console.log(data.processedSentences[0]);
+  setCorrectedText(data.processedSentences[0])
 };
   
 
