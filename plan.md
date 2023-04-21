@@ -26,3 +26,11 @@
     - Summarizer
     - Comparator
     - Spell Checker
+
+## Planning using Trello
+- We made a Trello board with a community template and added the following columns:
+    - Project Brief
+    - Product Design
+    - In-Progress
+    - Done
+
