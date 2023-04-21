@@ -6,7 +6,7 @@ function Output({correctedText}) {
  
     return (
     <div>
-      {/* <p>{correctedText.processedSentences[0]}</p> */}
+      <p>{correctedText}</p>
     </div>
   );
 
