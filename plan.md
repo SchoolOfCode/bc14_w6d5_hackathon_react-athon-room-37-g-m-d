@@ -34,3 +34,10 @@
     - In-Progress
     - Done
 
+- We made a lo-fi wireframe using Figma
+    - The page should have a heading
+    - The page should have a text input for the user to enter the text to be spell-checked
+    - The page should have a button to submit the text
+    - The page should have a textbox for the corrected text to be displayed
+    - The page should have a button to save the corrected text to the 'history' list
+    - The page should have a list of saved text as an unordered list
