@@ -16,10 +16,14 @@ function Input({onSubmit}) {
 
     function handleSubmit(e) {
         e.preventDefault();
-        console.log('The link was clicked.');
+        if (text.trim() !== "") {
+            console.log('The link was clicked.');
         // This proves the value of text is being passed to the app component
         console.log(text)
         onSubmit(text)
+        setText("");
+        }
+        
       }
       // This proves state updates with each new character typed
       console.log("Input State Updated")
