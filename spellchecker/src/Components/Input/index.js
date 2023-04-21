@@ -9,6 +9,7 @@
 
 import React from 'react'
 import { useState } from 'react'
+import './input.css'
 
 function Input({onSubmit}) {
 
