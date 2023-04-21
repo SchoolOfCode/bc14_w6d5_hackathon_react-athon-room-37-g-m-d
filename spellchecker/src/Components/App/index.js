@@ -1,9 +1,11 @@
 
 import './App.css';
 import Input from '../Input/index.js'
+import Output from '../Output/index.js'
 
 function App() {
 
+  const [correctedText, setCorrectedText] = useState("")
   async function sendTextToAPI(text) {
     console.log(`this is the argument passed into sendTextToAPI: ${text}`);
     // the URL contains our API key that Max got by signing up for free
@@ -18,7 +20,7 @@ function App() {
   const data = await response.json();
   // log the data to prove we have received it from the API
   console.log(data);
-  // onSubmit(data);
+  setCorrectedText(data)
 };
   
 
@@ -31,6 +33,7 @@ function App() {
     <div className="App">
       <header className="App-header">
       <Input onSubmit={handleSubmit}/>
+      <Output correctedText = {correctedText}/>
       </header>
     </div>
   );
