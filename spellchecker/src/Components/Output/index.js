@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Output({correctedText}) {
+function Output({correctedText, handleUndo}) {
   console.log(`Output State Updated ${correctedText}`) 
   return (
     <div>
@@ -9,6 +9,7 @@ function Output({correctedText}) {
           <li key={index}>{word}</li>
         ))}
       </ul>
+      <button onClick={() => handleUndo()}>Undo</button>
     </div>
   );
 }

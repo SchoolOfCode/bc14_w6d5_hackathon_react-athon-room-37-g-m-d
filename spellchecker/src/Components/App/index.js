@@ -31,11 +31,15 @@ function App() {
     sendTextToAPI(text);
   }
 
+  function handleUndo() {
+    setCorrectedText(prevCorrectedText => prevCorrectedText.slice(0, -1))
+  }
+
   return (
     <div className="App">
       <header className="App-header">
       <Input onSubmit={handleSubmit}/>
-      <Output correctedText = {correctedText}/>
+      <Output correctedText = {correctedText} handleUndo={handleUndo}/>
       </header>
     </div>
   );
