@@ -1,16 +1,16 @@
 import React from 'react';
 
 function Output({correctedText}) {
-  console.log(`Output State Updated ${correctedText}`)
-//  console.log(`this is the argument passed into Output: ${correctedText.processedSentences[0]}`);
- 
-    return (
+  console.log(`Output State Updated ${correctedText}`) 
+  return (
     <div>
-      <p>{correctedText}</p>
+      <ul>
+        {correctedText.map((word, index) => (
+          <li key={index}>{word}</li>
+        ))}
+      </ul>
     </div>
   );
-
-
 }
 
 export default Output;

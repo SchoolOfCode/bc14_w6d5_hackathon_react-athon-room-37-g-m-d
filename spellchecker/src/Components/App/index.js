@@ -6,7 +6,7 @@ import { useState } from 'react'
 
 function App() {
 
-  const [correctedText, setCorrectedText] = useState("")
+  const [correctedText, setCorrectedText] = useState([])
   async function sendTextToAPI(text) {
     console.log(`this is the argument passed into sendTextToAPI: ${text}`);
     // the URL contains our API key that Max got by signing up for free
@@ -22,7 +22,7 @@ function App() {
   // log the data to prove we have received it from the API
   console.log(data);
   // console.log(data.processedSentences[0]);
-  setCorrectedText(data.processedSentences[0])
+  setCorrectedText(prevCorrectedText => [...prevCorrectedText, data.processedSentences[0]]);
 };
   
 
