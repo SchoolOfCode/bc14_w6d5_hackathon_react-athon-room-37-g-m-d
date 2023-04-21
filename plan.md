@@ -41,3 +41,12 @@
     - The page should have a textbox for the corrected text to be displayed
     - The page should have a button to save the corrected text to the 'history' list
     - The page should have a list of saved text as an unordered list
+
+
+## Input Component
+- Needs to have an input box that takes in text
+- The text needs to be saved using handleChange
+- The text needs to be saved in a state so it stays alive during rendering
+- We need to use the useEffect because the data is being used outside of the app (API)
+- There needs to be a button that will submit the input field value
+- This value is sent to the app component, then sent to the API
